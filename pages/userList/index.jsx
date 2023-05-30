@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import { DataGrid } from "@material-ui/data-grid";
-import { ProductRows } from "../../../../DummyData";
 import { DeleteOutline } from "@material-ui/icons";
-import SidBar from "../../sidebar/SidBar";
-import Topbar from "../../topbars/Topbar";
 import { Link } from "react-router-dom";
+import Topbar from "@/components/topbars/Topbar";
+import SideBar from "@/components/sidebar/SideBar";
 
-const ProductList = () => {
-  const [data, setData] = useState(ProductRows);
-
-  const handleDelete = (id) => {
+const index = () => {
+  const [data, setData] = useState(UserRows);
+  const handleDelete = (id, data) => {
     setData(data.filter((item) => item.id !== id));
   };
-  const ProductColumns = [
+  const UserColumns = [
     {
       field: "id",
       headerName: "ID",
@@ -20,33 +18,40 @@ const ProductList = () => {
     },
 
     {
-      field: "product",
-      headerName: "Product",
-      width: 200,
+      field: "username",
+      headerName: "Username",
+      width: 100,
       editable: true,
       renderCell: (params) => {
         return (
-          <div className="productListContainer">
+          <div className="userListUserContainer">
             <img
-              className="ProductListImg"
-              src={params.row.img}
+              className="userListUserImg"
+              src={params.row.avater}
               alt="Users Avater"
             />
-            <h4>{params.row.name}</h4>
+            <h4>{params.row.username}</h4>
           </div>
         );
       },
     },
-
     {
-      field: "stock",
-      headerName: "Stock",
+      field: "avater",
+      headerName: "Avater",
       width: 100,
       editable: true,
     },
     {
-      field: "price",
-      headerName: "Price",
+      field: "email",
+      headerName: "Email",
+      type: "number",
+      width: 100,
+      editable: true,
+    },
+    {
+      field: "age",
+      headerName: "Age",
+      type: "number",
       width: 100,
       editable: true,
     },
@@ -56,16 +61,23 @@ const ProductList = () => {
       width: 100,
       editable: true,
     },
+    {
+      field: "transactions",
+      headerName: "Transactions",
+      type: "number",
+      width: 100,
+      editable: true,
+    },
 
     {
       field: "action",
       headerName: "Action",
-      width: 200,
+      width: 100,
       renderCell: (params) => {
         return (
           <>
-            <Link to={`/dashboard/products/${params.row.id}`}>
-              <button className="productListEditButton">Edit</button>
+            <Link to={`/dashboard/users/${params.row.id}`}>
+              <button className="userListEditButton">Edit</button>
             </Link>
             <DeleteOutline
               className="userListDeletButton"
@@ -80,21 +92,20 @@ const ProductList = () => {
   return (
     <>
       <Topbar />
-      <div className="productListContainer">
-        <SidBar />
-        <div className="productList">
-          {/* <DataGrid
+      <div className="userListWrapper">
+        <SideBar />
+        <div className="userList">
+          <DataGrid
             rows={data}
-            columns={ProductColumns}
-            pageSize={10}
+            columns={UserColumns}
+            pageSize={5}
             checkboxSelection
             disableSelectionOnClick
-          /> */}
-          Product List.
+          />
         </div>
       </div>
     </>
   );
 };
 
-export default ProductList;
+export default index;

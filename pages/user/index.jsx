@@ -1,5 +1,6 @@
+import SideBar from "@/components/sidebar/SideBar";
+import Topbar from "@/components/topbars/Topbar";
 import React from "react";
-import SidBar from "../../sidebar/SidBar";
 import { BsLink } from "react-icons/bs";
 import { BsFillCalendar2MinusFill } from "react-icons/bs";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
@@ -8,20 +9,16 @@ import {
   MdPermIdentity,
   MdMailOutline,
 } from "react-icons/md";
-import { Link } from "react-router-dom";
-import Topbar from "../../topbars/Topbar";
+import Link from "next/link";
 
-const User = () => {
+const index = () => {
   return (
     <>
-      <Topbar />
-
       <div className="editUserContainer">
-        <SidBar />
         <div className="editUser">
           <div className="userTitleContainer">
             <h1 className="userTitle">Edit User</h1>
-            <Link to="/dashboard/users/new/users">
+            <Link href="/newUser">
               <button className="userAddButton">Create</button>
               <BsLink />
             </Link>
@@ -60,7 +57,6 @@ const User = () => {
                   <span className="bottomUserInfoTitle">16/10/2022</span>
                 </div>
                 <div className="userInfo">
-                  <MdOutlineLocationSearching className="icon" />
                   <span className="bottomUserInfoTitle">Enugu Nigeria</span>
                 </div>
               </div>
@@ -146,4 +142,4 @@ const User = () => {
   );
 };
 
-export default User;
+export default index;

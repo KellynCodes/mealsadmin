@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineSetting } from "react-icons/ai";
 import { GrLanguage } from "react-icons/gr";
+import { IoMdNotificationsOutline } from "react-icons/io";
 
 const Topbar = () => {
   return (
@@ -11,7 +12,7 @@ const Topbar = () => {
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">
-            {/* <IoNotificationsCircleOutline /> */}
+            <IoMdNotificationsOutline />
             <span className="topIconBadge">2</span>
           </div>
           <div className="topbarIconContainer">

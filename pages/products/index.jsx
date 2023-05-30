@@ -1,22 +1,16 @@
-import { Link } from "react-router-dom";
 import { MdOutlinePublishedWithChanges } from "react-icons/md";
 import { BsLink } from "react-icons/bs";
 import React from "react";
-import SidBar from "../../sidebar/SidBar";
-import Topbar from "../../topbars/Topbar";
-import Chart from "../../CHART/Chart";
-import { ProductData } from "../../../../DummyData";
+import Link from "next/link";
 
-const Product = () => {
+const index = () => {
   return (
     <>
-      <Topbar />
       <div className="productContainer">
-        <SidBar />
         <div className="product">
           <div className="productTileContainer">
             <h1 className="prodcutTitle">Product</h1>
-            <Link to="/dashboard/products/new-product">
+            <Link href="/dashboard/products/new-product">
               <button className="productAddButton">Create</button>
               <BsLink />
             </Link>
@@ -103,4 +97,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default index;

@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineEye } from "react-icons";
-
-const WidgetSmall = () => {
+export default function WidgetSmall() {
   return (
     <div className="widgetSm">
       <span className="widgetSmTitle">New Join Members</span>
@@ -13,7 +12,7 @@ const WidgetSmall = () => {
             <span className="widgetSmUserTitle">Software Enginner</span>
           </div>
           <button className="widgetSmButton">
-            <AiOutlineEye className="widgetSmIcon" />
+            {/* <AiOutlineEye className="widgetSmIcon" /> */}
             Display
           </button>
         </li>
@@ -21,10 +20,10 @@ const WidgetSmall = () => {
           <img src="/riceandmeat.jpg" alt="" className="widgetSmImg" />
           <div className="widgetSmUser">
             <span className="widgetSmUserName">John Kennedy</span>
-            <span className="widgetSmUserTitle">Software Enginner</span>
+            <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
           <button className="widgetSmButton">
-            <AiOutlineEye className="widgetSmIcon" />
+            {/* <AiOutlineEye className="widgetSmIcon" /> */}
             Display
           </button>
         </li>
@@ -32,10 +31,10 @@ const WidgetSmall = () => {
           <img src="/riceandmeat.jpg" alt="" className="widgetSmImg" />
           <div className="widgetSmUser">
             <span className="widgetSmUserName">John Kennedy</span>
-            <span className="widgetSmUserTitle">Software Enginner</span>
+            <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
           <button className="widgetSmButton">
-            <AiOutlineEye className="widgetSmIcon" />
+            {/* <AiOutlineEye className="widgetSmIcon" /> */}
             Display
           </button>
         </li>
@@ -43,10 +42,10 @@ const WidgetSmall = () => {
           <img src="/riceandmeat.jpg" alt="" className="widgetSmImg" />
           <div className="widgetSmUser">
             <span className="widgetSmUserName">John Kennedy</span>
-            <span className="widgetSmUserTitle">Software Enginner</span>
+            <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
           <button className="widgetSmButton">
-            <AiOutlineEye className="widgetSmIcon" />
+            {/* <AiOutlineEye className="widgetSmIcon" /> */}
             Display
           </button>
         </li>
@@ -54,10 +53,10 @@ const WidgetSmall = () => {
           <img src="/riceandmeat.jpg" alt="" className="widgetSmImg" />
           <div className="widgetSmUser">
             <span className="widgetSmUserName">John Kennedy</span>
-            <span className="widgetSmUserTitle">Software Enginner</span>
+            <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
           <button className="widgetSmButton">
-            <AiOutlineEye className="widgetSmIcon" />
+            {/* <AiOutlineEye className="widgetSmIcon" /> */}
             Display
           </button>
         </li>
@@ -65,16 +64,14 @@ const WidgetSmall = () => {
           <img src="/riceandmeat.jpg" alt="" className="widgetSmImg" />
           <div className="widgetSmUser">
             <span className="widgetSmUserName">John Kennedy</span>
-            <span className="widgetSmUserTitle">Software Enginner</span>
+            <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
           <button className="widgetSmButton">
-            <AiOutlineEye className="widgetSmIcon" />
+            {/* <AiOutlineEye className="widgetSmIcon" /> */}
             Display
           </button>
         </li>
       </ul>
     </div>
   );
-};
-
-export default WidgetSmall;
+}

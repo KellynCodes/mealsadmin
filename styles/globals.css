@@ -86,13 +86,6 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 a {
@@ -102,19 +95,19 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
-@import url("../components/pages/Home/home.css");
-@import url("../components/pages/newProducts/newproduct.css");
-@import url("../components/pages/newUser/newUser.css");
-@import url("../components/pages/user/user.css");
+@import url("../pages/Home/home.css");
+@import url("../pages/newProducts/newproduct.css");
+@import url("../pages/newUser/newUser.css");
+@import url("../pages/user/user.css");
 @import url("../components/pages/productList/productList.css");
-@import url("../components/pages/userList/userlist.css");
+@import url("../pages/userList/userlist.css");
 @import url("../components/topbars/topbar.css");
 @import url("../components/widgetLg/widgetLg.css");
 @import url("../components/widgetSmall/widgetSmall.css");
 @import url("../components/featuredInfo/featured.css");
 @import url("../components/sidebar/sidebar.css");
 @import url("../components/CHART/chart.css");
-@import url("../components/dashboard.css");
+@import url("../pages/dashboard.css");

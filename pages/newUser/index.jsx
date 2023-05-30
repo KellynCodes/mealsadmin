@@ -1,13 +1,13 @@
+import SideBar from "@/components/sidebar/SideBar";
+import Topbar from "@/components/topbars/Topbar";
 import React from "react";
-import SidBar from "../../sidebar/SidBar";
-import Topbar from "../../topbars/Topbar";
-const NewUser = () => {
+const index = () => {
   return (
     <>
       <Topbar />
 
       <div className="newUserContainer">
-        <SidBar />
+        {/* <SideBar /> */}
         <div className="newUser">
           <h2 className="newUserTitle">New User</h2>
           <form className="newUserForm" action="">
@@ -71,4 +71,4 @@ const NewUser = () => {
   );
 };
 
-export default NewUser;
+export default index;

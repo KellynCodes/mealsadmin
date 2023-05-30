@@ -5,9 +5,8 @@ import MdAttachMoney from "react-icons/md";
 import BiTrendingUp from "react-icons/bi";
 import IoPersonOutline from "react-icons/io";
 import HiOutlineBuildingStorefront from "react-icons/hi";
-import Link from "next";
 
-const SidBar = () => {
+export default function SideBar() {
   return (
     <>
       <div className="sideBar">
@@ -17,9 +16,7 @@ const SidBar = () => {
             <ul className="sideBarList">
               <li className="sideBarListItems">
                 <MdLineStyle className="sideBarIcons" />
-                <Link className="link" to="/dashboard">
-                  Home
-                </Link>
+                Home
               </li>
               <li className="sideBarListItems">
                 <MdOutlineTimeline className="sideBarIcons" />
@@ -35,18 +32,14 @@ const SidBar = () => {
           <div className="sideBarMenu">
             <h3 className="">Quick Menu</h3>
             <ul className="sideBarList">
-              <Link className="link" to="/dashboard/users">
-                <li className="sideBarListItems">
-                  <IoPersonOutline className="sideBarIcons" />
-                  Users
-                </li>
-              </Link>
-              <Link className="link" to="/dashboard/products">
-                <li className="sideBarListItems">
-                  <HiOutlineBuildingStorefront className="sideBarIcons" />
-                  Products
-                </li>
-              </Link>
+              <li className="sideBarListItems">
+                <IoPersonOutline className="sideBarIcons" />
+                Users
+              </li>
+              <li className="sideBarListItems">
+                <HiOutlineBuildingStorefront className="sideBarIcons" />
+                Products
+              </li>
               <li className="sideBarListItems">
                 <MdAttachMoney className="sideBarIcons" />
                 Transactions
@@ -95,6 +88,4 @@ const SidBar = () => {
       </div>
     </>
   );
-};
-
-export default SidBar;
+}
