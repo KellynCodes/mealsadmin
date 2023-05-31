@@ -1,10 +1,10 @@
 import React from "react";
-import MdLineStyle from "react-icons/md";
-import MdOutlineTimeline from "react-icons/md";
-import MdAttachMoney from "react-icons/md";
-import BiTrendingUp from "react-icons/bi";
-import IoPersonOutline from "react-icons/io";
-import HiOutlineBuildingStorefront from "react-icons/hi";
+import { MdLineStyle, MdTimeline } from "react-icons/md";
+import { MdOutlineTimeline } from "react-icons/md";
+import { MdAttachMoney } from "react-icons/md";
+import { BiTrendingUp } from "react-icons/bi";
+import { IoMdPerson } from "react-icons/io";
+import { HiOutlineAnnotation } from "react-icons/hi";
 
 export default function SideBar() {
   return (
@@ -19,7 +19,7 @@ export default function SideBar() {
                 Home
               </li>
               <li className="sideBarListItems">
-                <MdOutlineTimeline className="sideBarIcons" />
+                <MdTimeline className="sideBarIcons" />
                 Analytics
               </li>
               <li className="sideBarListItems">
@@ -33,11 +33,11 @@ export default function SideBar() {
             <h3 className="">Quick Menu</h3>
             <ul className="sideBarList">
               <li className="sideBarListItems">
-                <IoPersonOutline className="sideBarIcons" />
+                <IoMdPerson className="sideBarIcons" />
                 Users
               </li>
               <li className="sideBarListItems">
-                <HiOutlineBuildingStorefront className="sideBarIcons" />
+                <HiOutlineAnnotation className="sideBarIcons" />
                 Products
               </li>
               <li className="sideBarListItems">

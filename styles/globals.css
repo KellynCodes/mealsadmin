@@ -102,7 +102,7 @@ a {
 @import url("../pages/newProducts/newproduct.css");
 @import url("../pages/newUser/newUser.css");
 @import url("../pages/user/user.css");
-@import url("../components/pages/productList/productList.css");
+@import url("../pages/productList/productList.css");
 @import url("../pages/userList/userlist.css");
 @import url("../components/topbars/topbar.css");
 @import url("../components/widgetLg/widgetLg.css");
@@ -111,3 +111,4 @@ a {
 @import url("../components/sidebar/sidebar.css");
 @import url("../components/CHART/chart.css");
 @import url("../pages/dashboard.css");
+@import url("./boot.css");
